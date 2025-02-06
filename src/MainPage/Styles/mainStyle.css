@@ -1,0 +1,13 @@
+.main__main {
+  padding: 0 1rem;
+  width: 70%;
+  flex-grow: 3;
+  overflow: auto;
+}
+
+.main__container-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}

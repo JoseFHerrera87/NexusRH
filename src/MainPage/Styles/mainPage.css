@@ -1,0 +1,4 @@
+.principal {
+  display: flex;
+  height: calc(100% - 14rem);
+}
