@@ -1,0 +1,41 @@
+.container_box {
+  max-width: 30rem;
+  border: 1px solid var(--subtitle);
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.header_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.box_title {
+  margin: 1rem 0rem;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.box_icon {
+  color: var(--subtitle);
+}
+
+.box_container_data {
+  width: 100%;
+}
+
+.box_data {
+  font-size: 2.5rem;
+  line-height: 1rem;
+}
+
+.box_footer {
+  width: 100%;
+}
+
+.box_subtitle {
+  font-size: 1.6rem;
+  color: var(--subtitle);
+}

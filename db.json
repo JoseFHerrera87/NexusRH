@@ -1,0 +1,132 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "Carlos",
+      "lastName": "Portillo",
+      "department": "Compras",
+      "email": "cportillo@llmc.hn",
+      "img": "user1.jpg",
+      "birthday": "1985-08-15",
+      "detached": "false"
+    },
+    {
+      "id": 2,
+      "firstName": "Luis",
+      "lastName": "Argueta",
+      "department": "Mantenimiento",
+      "email": "luisargueta@llmc.hn",
+      "img": "user3.jpg",
+      "birthday": "1990-11-22",
+      "detached": "false"
+    },
+    {
+      "id": 3,
+      "firstName": "Ana",
+      "lastName": "Martínez",
+      "department": "Enfermería",
+      "email": "anamartinez@llmc.hn",
+      "img": "user2.jpg",
+      "birthday": "1992-03-10",
+      "detached": "true"
+    },
+    {
+      "id": 4,
+      "firstName": "Carlos",
+      "lastName": "Hernández",
+      "department": "IT",
+      "email": "carloshernandez@llmc.hn",
+      "img": "user2.jpg",
+      "birthday": "1990-05-12",
+      "detached": "false"
+    },
+    {
+      "id": 5,
+      "firstName": "María",
+      "lastName": "González",
+      "department": "RRHH",
+      "email": "mariagonzalez@llmc.hn",
+      "img": "user2.jpg",
+      "birthday": "1988-07-25",
+      "detached": "false"
+    },
+    {
+      "id": 6,
+      "firstName": "Pedro",
+      "lastName": "Sánchez",
+      "department": "Facturación",
+      "email": "pedrosanchez@llmc.hn",
+      "img": "user2.jpg",
+      "birthday": "1993-01-14",
+      "detached": "true"
+    },
+    {
+      "id": 7,
+      "firstName": "Luisa",
+      "lastName": "Torres",
+      "department": "Laboratorio",
+      "email": "luisatorres@llmc.hn",
+      "img": "user2.jpg",
+      "birthday": "1992-03-10",
+      "detached": "false"
+    },
+    {
+      "id": 8,
+      "firstName": "Alex",
+      "lastName": "Pierro",
+      "department": "Compras",
+      "email": "alexpierro@llmc.hn",
+      "img": "user1.jpg",
+      "birthday": "1995-07-20",
+      "detached": "false"
+    },
+    {
+      "id": 9,
+      "firstName": "Sofia",
+      "lastName": "Pérez",
+      "department": "IT",
+      "email": "sofiaperez@llmc.hn",
+      "img": "user2.jpg",
+      "birthday": "1992-11-30",
+      "detached": "false"
+    },
+    {
+      "id": 10,
+      "firstName": "José",
+      "lastName": "Alvarado",
+      "department": "Facturación",
+      "email": "josealvarado@llmc.hn",
+      "img": "user1.jpg",
+      "birthday": "1988-09-09",
+      "detached": "true"
+    },
+    {
+      "id": 11,
+      "firstName": "Gregori",
+      "lastName": "Alvarado",
+      "department": "Caja",
+      "email": "gregorialvarado@llmc.hn",
+      "img": "user1.jpg",
+      "birthday": "1988-01-05",
+      "detached": "true"
+    }
+  ],
+  "departments": [
+    "Compras",
+    "Mantenimiento",
+    "Enfermería",
+    "IT",
+    "RRHH",
+    "Facturación",
+    "Laboratorio",
+    "Caja"
+  ],
+  "company": {
+    "companyName": "Hospital La Lima Medical Center",
+    "company_location": "Frente a Zona Americana",
+    "company_email": "ggeneral@llmc.hn",
+    "company_web": "www.llmc.hn",
+    "company_sector": "privado",
+    "company_pbx": "2606-0020"
+  }
+}

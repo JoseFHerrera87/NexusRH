@@ -11,9 +11,7 @@ export const HeaderLayout = () => {
         <div className="header__logo">
           <img src="FrentByte.png" alt="logo" className="logo__img" />
         </div>
-
-        <Searchbar />
-
+        <h1 className="header_title">Nexus RRHH</h1>
         <a className="header__link" href="#">
           <FontAwesomeIcon icon={faUserPlus} className="link__icon" />
           <h3 className="link__text">Agregar Empleado</h3>

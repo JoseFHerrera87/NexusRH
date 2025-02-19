@@ -2,6 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
+import "../MainPage/Styles/searchbar.css";
+
 export const Searchbar = () => {
   const [search, setsearch] = useState("");
   const maxLengthSearch = 30;
@@ -19,7 +21,7 @@ export const Searchbar = () => {
   };
 
   return (
-    <div className="header__search">
+    <div className="search">
       <div className="search__searchbar">
         <input
           type="text"

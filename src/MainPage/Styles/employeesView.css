@@ -1,0 +1,32 @@
+.main__header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 3rem;
+  margin-bottom: 10rem;
+}
+
+.header_filters {
+  width: 30%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.filter_text {
+  margin-bottom: 1rem;
+  display: block;
+  font-weight: 600;
+}
+
+.filter_options {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.employessList {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10rem 1rem;
+}

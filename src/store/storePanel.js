@@ -1,6 +1,9 @@
 import { create } from "zustand";
-import { viewSlice } from "./viewSlice";
+import { EmployeesView } from "../MainPage/Views/";
 
-const useStorePanel = create((set) => viewSlice(set));
+const useStorePanel = create((set) => ({
+  view: <EmployeesView />,
+  changeView: (newView) => set({ view: newView }),
+}));
 
 export default useStorePanel;
