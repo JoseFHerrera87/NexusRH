@@ -9,13 +9,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/asideStyle.css";
 import useStorePanel from "../../store/storePanel";
-import { EmployeesView, CompanyView, PolicyView, ConfigView } from "../Views";
+import { EmployeesView, CompanyView, ConfigView, PayrollView } from "../Views";
 import { useRef } from "react";
 
 export const AsideLayout = () => {
   const employeesRef = useRef(null);
   const companyRef = useRef(null);
-  const policyRef = useRef(null);
+  const payrollRef = useRef(null);
   const configRef = useRef(null);
 
   const { changeView } = useStorePanel();
@@ -25,7 +25,7 @@ export const AsideLayout = () => {
 
     employeesRef.current.classList.remove("nav__option--active");
     companyRef.current.classList.remove("nav__option--active");
-    policyRef.current.classList.remove("nav__option--active");
+    payrollRef.current.classList.remove("nav__option--active");
     configRef.current.classList.remove("nav__option--active");
 
     e.currentTarget.classList.add("nav__option--active");
@@ -37,14 +37,11 @@ export const AsideLayout = () => {
       case "CompanyView":
         changeView(<CompanyView />);
         break;
-      case "PolicyView":
-        changeView(<PolicyView />);
+      case "PayrollView":
+        changeView(<PayrollView />);
         break;
       case "ConfigView":
         changeView(<ConfigView />);
-        break;
-      default:
-        changeView(<EmployeesView />);
         break;
     }
   };
@@ -81,13 +78,13 @@ export const AsideLayout = () => {
         </li>
         <li
           className="nav__option"
-          ref={policyRef}
-          data-name="PolicyView"
+          ref={payrollRef}
+          data-name="PayrollView"
           onClick={onSelectView}
         >
           <div className="option__container">
             <FontAwesomeIcon icon={faFileSignature} className="option__icon" />
-            <span className="option__text">Politicas</span>
+            <span className="option__text">Planillas</span>
           </div>
         </li>
         <li

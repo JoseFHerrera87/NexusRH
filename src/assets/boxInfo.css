@@ -1,5 +1,5 @@
 .container_box {
-  max-width: 30rem;
+  width: 30rem;
   border: 1px solid var(--subtitle);
   border-radius: 2rem;
   padding: 2rem;

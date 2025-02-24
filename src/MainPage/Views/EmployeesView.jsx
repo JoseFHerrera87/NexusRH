@@ -39,9 +39,9 @@ export const EmployeesView = () => {
           >
             <option value="all">Todos</option>
             {departments.data &&
-              departments.data.map((department) => (
-                <option value={department} key={department}>
-                  {department}
+              departments.data.map(({name,id}) => (
+                <option value={name} key={id}>
+                  {name}
                 </option>
               ))}
           </select>

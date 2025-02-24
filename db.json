@@ -8,7 +8,7 @@
       "email": "cportillo@llmc.hn",
       "img": "user1.jpg",
       "birthday": "1985-08-15",
-      "detached": "false"
+      "detached": false
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "email": "luisargueta@llmc.hn",
       "img": "user3.jpg",
       "birthday": "1990-11-22",
-      "detached": "false"
+      "detached": false
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "email": "anamartinez@llmc.hn",
       "img": "user2.jpg",
       "birthday": "1992-03-10",
-      "detached": "true"
+      "detached": true
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "email": "carloshernandez@llmc.hn",
       "img": "user2.jpg",
       "birthday": "1990-05-12",
-      "detached": "false"
+      "detached": false
     },
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "email": "mariagonzalez@llmc.hn",
       "img": "user2.jpg",
       "birthday": "1988-07-25",
-      "detached": "false"
+      "detached": false
     },
     {
       "id": 6,
@@ -58,7 +58,7 @@
       "email": "pedrosanchez@llmc.hn",
       "img": "user2.jpg",
       "birthday": "1993-01-14",
-      "detached": "true"
+      "detached": true
     },
     {
       "id": 7,
@@ -68,7 +68,7 @@
       "email": "luisatorres@llmc.hn",
       "img": "user2.jpg",
       "birthday": "1992-03-10",
-      "detached": "false"
+      "detached": false
     },
     {
       "id": 8,
@@ -78,7 +78,7 @@
       "email": "alexpierro@llmc.hn",
       "img": "user1.jpg",
       "birthday": "1995-07-20",
-      "detached": "false"
+      "detached": false
     },
     {
       "id": 9,
@@ -88,7 +88,7 @@
       "email": "sofiaperez@llmc.hn",
       "img": "user2.jpg",
       "birthday": "1992-11-30",
-      "detached": "false"
+      "detached": false
     },
     {
       "id": 10,
@@ -98,7 +98,7 @@
       "email": "josealvarado@llmc.hn",
       "img": "user1.jpg",
       "birthday": "1988-09-09",
-      "detached": "true"
+      "detached": true
     },
     {
       "id": 11,
@@ -108,25 +108,273 @@
       "email": "gregorialvarado@llmc.hn",
       "img": "user1.jpg",
       "birthday": "1988-01-05",
-      "detached": "true"
+      "detached": true
+    },
+    {
+      "id": 12,
+      "firstName": "Juliana",
+      "lastName": "Rodríguez",
+      "department": "Mantenimiento",
+      "email": "julianarodriguez@llmc.hn",
+      "img": "user2.jpg",
+      "birthday": "1995-04-18",
+      "detached": false
+    },
+    {
+      "id": 13,
+      "firstName": "Raúl",
+      "lastName": "Martínez",
+      "department": "IT",
+      "email": "raulmartinez@llmc.hn",
+      "img": "user1.jpg",
+      "birthday": "1990-11-04",
+      "detached": false
+    },
+    {
+      "id": 14,
+      "firstName": "Carolina",
+      "lastName": "García",
+      "department": "RRHH",
+      "email": "carolinagarcia@llmc.hn",
+      "img": "user3.jpg",
+      "birthday": "1987-02-17",
+      "detached": true
+    },
+    {
+      "id": 15,
+      "firstName": "Ricardo",
+      "lastName": "Vázquez",
+      "department": "Compras",
+      "email": "ricardovazquez@llmc.hn",
+      "img": "user1.jpg",
+      "birthday": "1996-08-30",
+      "detached": false
+    },
+    {
+      "id": 16,
+      "firstName": "Lucía",
+      "lastName": "Pérez",
+      "department": "Laboratorio",
+      "email": "luciaperez@llmc.hn",
+      "img": "user3.jpg",
+      "birthday": "1994-12-12",
+      "detached": true
+    },
+    {
+      "id": 17,
+      "firstName": "Andrés",
+      "lastName": "Serrano",
+      "department": "Enfermería",
+      "email": "andresserrano@llmc.hn",
+      "img": "user1.jpg",
+      "birthday": "1991-06-02",
+      "detached": false
+    },
+    {
+      "id": 18,
+      "firstName": "Sandra",
+      "lastName": "Jiménez",
+      "department": "Mantenimiento",
+      "email": "sandrajimenez@llmc.hn",
+      "img": "user2.jpg",
+      "birthday": "1993-09-24",
+      "detached": false
+    },
+    {
+      "id": 19,
+      "firstName": "Miguel",
+      "lastName": "López",
+      "department": "IT",
+      "email": "miguellopez@llmc.hn",
+      "img": "user1.jpg",
+      "birthday": "1992-05-06",
+      "detached": true
+    },
+    {
+      "id": 20,
+      "firstName": "Beatriz",
+      "lastName": "Cordero",
+      "department": "RRHH",
+      "email": "beatrizcordero@llmc.hn",
+      "img": "user3.jpg",
+      "birthday": "1994-01-22",
+      "detached": true
     }
   ],
   "departments": [
-    "Compras",
-    "Mantenimiento",
-    "Enfermería",
-    "IT",
-    "RRHH",
-    "Facturación",
-    "Laboratorio",
-    "Caja"
+    {
+      "id": 1,
+      "name": "Compras"
+    },
+    {
+      "id": 2,
+      "name": "Mantenimiento"
+    },
+    {
+      "id": 3,
+      "name": "Enfermería"
+    },
+    {
+      "id": 4,
+      "name": "IT"
+    },
+    {
+      "id": 5,
+      "name": "RRHH"
+    },
+    {
+      "id": 6,
+      "name": "Facturación"
+    },
+    {
+      "id": 7,
+      "name": "Laboratorio"
+    },
+    {
+      "id": 8,
+      "name": "Caja"
+    }
   ],
-  "company": {
-    "companyName": "Hospital La Lima Medical Center",
-    "company_location": "Frente a Zona Americana",
-    "company_email": "ggeneral@llmc.hn",
-    "company_web": "www.llmc.hn",
-    "company_sector": "privado",
-    "company_pbx": "2606-0020"
-  }
+  "payrolls": [
+    {
+      "id": 1,
+      "from": "2025-01-01",
+      "to": "2025-01-31",
+      "description": "Base salary plus productivity bonus",
+      "view": "pdf1"
+    },
+    {
+      "id": 2,
+      "from": "2025-02-01",
+      "to": "2025-02-28",
+      "description": "Vacation bonus",
+      "view": "pdf1"
+    },
+    {
+      "id": 3,
+      "from": "2025-03-01",
+      "to": "2025-03-31",
+      "description": "Loan deduction",
+      "view": "pdf1"
+    },
+    {
+      "id": 4,
+      "from": "2025-04-01",
+      "to": "2025-04-30",
+      "description": "Base salary plus overtime",
+      "view": "pdf1"
+    },
+    {
+      "id": 5,
+      "from": "2025-05-01",
+      "to": "2025-05-31",
+      "description": "Performance bonus",
+      "view": "pdf1"
+    },
+    {
+      "id": 6,
+      "from": "2025-06-01",
+      "to": "2025-06-30",
+      "description": "Vacation (June 10-20)",
+      "view": "pdf1"
+    },
+    {
+      "id": 7,
+      "from": "2025-07-01",
+      "to": "2025-07-31",
+      "description": "Medical insurance deduction",
+      "view": "pdf1"
+    },
+    {
+      "id": 8,
+      "from": "2025-08-01",
+      "to": "2025-08-31",
+      "description": "Base salary",
+      "view": "pdf1"
+    },
+    {
+      "id": 9,
+      "from": "2025-09-01",
+      "to": "2025-09-30",
+      "description": "Special project bonus",
+      "view": "pdf1"
+    },
+    {
+      "id": 10,
+      "from": "2025-10-01",
+      "to": "2025-10-31",
+      "description": "Loan deduction",
+      "view": "pdf1"
+    },
+    {
+      "id": 11,
+      "from": "2025-11-01",
+      "to": "2025-11-30",
+      "description": "Base salary plus performance bonus",
+      "view": "pdf1"
+    },
+    {
+      "id": 12,
+      "from": "2025-12-01",
+      "to": "2025-12-31",
+      "description": "Christmas bonus",
+      "view": "pdf1"
+    },
+    {
+      "id": 13,
+      "from": "2026-01-01",
+      "to": "2026-01-31",
+      "description": "Base salary plus year-end bonuses",
+      "view": "pdf1"
+    },
+    {
+      "id": 14,
+      "from": "2026-02-01",
+      "to": "2026-02-28",
+      "description": "Student loan deduction",
+      "view": "pdf1"
+    },
+    {
+      "id": 15,
+      "from": "2026-03-01",
+      "to": "2026-03-31",
+      "description": "Base salary",
+      "view": "pdf1"
+    },
+    {
+      "id": 16,
+      "from": "2026-04-01",
+      "to": "2026-04-30",
+      "description": "Vacation bonus",
+      "view": "pdf1"
+    },
+    {
+      "id": 17,
+      "from": "2026-05-01",
+      "to": "2026-05-31",
+      "description": "Life insurance deduction",
+      "view": "pdf1"
+    },
+    {
+      "id": 18,
+      "from": "2026-06-01",
+      "to": "2026-06-30",
+      "description": "Base salary plus productivity bonus",
+      "view": "pdf1"
+    },
+    {
+      "id": 19,
+      "from": "2026-07-01",
+      "to": "2026-07-31",
+      "description": "Performance bonus",
+      "view": "pdf1"
+    },
+    {
+      "id": 20,
+      "from": "2026-08-01",
+      "to": "2026-08-31",
+      "description": "Social contribution deduction",
+      "view": "pdf1"
+    }
+  ]
 }
