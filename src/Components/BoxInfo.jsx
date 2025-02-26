@@ -1,6 +1,5 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../assets/boxInfo.css";
 
 export const BoxInfo = ({ title, subtitle, icon, value }) => {
   return (

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useFetch } from "../../Hooks/useFetch";
 import { Searchbar, StaffCard } from "../../Components";
-import "../Styles/employeesView.css";
 
 export const EmployeesView = () => {
   const employees = useFetch("http://localhost:3000/employees");
@@ -39,7 +38,7 @@ export const EmployeesView = () => {
           >
             <option value="all">Todos</option>
             {departments.data &&
-              departments.data.map(({name,id}) => (
+              departments.data.map(({ name, id }) => (
                 <option value={name} key={id}>
                   {name}
                 </option>
@@ -47,7 +46,7 @@ export const EmployeesView = () => {
           </select>
         </div>
 
-        <Searchbar />
+        <Searchbar placeholder={"Buscar Empleado..."} />
       </header>
       <div className="employessList">
         {employeesFiltered.length === 0 ? (

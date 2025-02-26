@@ -7,7 +7,6 @@ import {
   faFile,
   faRightFromBracket,
 } from "@fortawesome/free-solid-svg-icons";
-import "../Styles/asideStyle.css";
 import useStorePanel from "../../store/storePanel";
 import { EmployeesView, CompanyView, ConfigView, PayrollView } from "../Views";
 import { useRef } from "react";
@@ -47,57 +46,64 @@ export const AsideLayout = () => {
   };
 
   return (
-    <aside>
-      <header className="aside__header">
-        <h1>Panel</h1>
-        <svg className="header__polka"></svg>
+    <aside className="bg-primaryn relative w-1/4 h-[calc(100vh - 14rem)] rounded-t-none rounded-r-2xl rounded-b-2xl rounded-l-none grow-1">
+      <header className="px-2 py-1">
+        <h1 className="text-center text-secondaryn text-4xl font-semibold tracking-wider">
+          Panel
+        </h1>
+        <svg className="absolute w-5 h-9 top-0 left-0 z-1 polka opacity-30"></svg>
       </header>
 
-      <nav className="aside__nav">
-        <li
-          className="nav__option nav__option--active"
-          ref={employeesRef}
-          data-name="EmployeesView"
-          onClick={onSelectView}
-        >
-          <div className="option__container">
-            <FontAwesomeIcon icon={faFilter} className="option__icon" />
-            <span className="option__text">Empleados</span>
-          </div>
-        </li>
-        <li
-          className="nav__option"
-          ref={companyRef}
-          data-name="CompanyView"
-          onClick={onSelectView}
-        >
-          <div className="option__container">
-            <FontAwesomeIcon icon={faBuildingUser} className="option__icon" />
-            <span className="option__text">Empresa</span>
-          </div>
-        </li>
-        <li
-          className="nav__option"
-          ref={payrollRef}
-          data-name="PayrollView"
-          onClick={onSelectView}
-        >
-          <div className="option__container">
-            <FontAwesomeIcon icon={faFileSignature} className="option__icon" />
-            <span className="option__text">Planillas</span>
-          </div>
-        </li>
-        <li
-          className="nav__option"
-          ref={configRef}
-          data-name="ConfigView"
-          onClick={onSelectView}
-        >
-          <div className="option__container">
-            <FontAwesomeIcon icon={faGear} className="option__icon" />
-            <span className="option__text">Ajustes</span>
-          </div>
-        </li>
+      <nav className="my-1 h-2/4">
+        <ul className="flex flex-col  w-full h-full">
+          <li
+            className=""
+            ref={employeesRef}
+            data-name="EmployeesView"
+            onClick={onSelectView}
+          >
+            <div className="">
+              <FontAwesomeIcon icon={faFilter} className="" />
+              <span className="">Empleados</span>
+            </div>
+          </li>
+          <li
+            className="nav__option"
+            ref={companyRef}
+            data-name="CompanyView"
+            onClick={onSelectView}
+          >
+            <div className="option__container">
+              <FontAwesomeIcon icon={faBuildingUser} className="option__icon" />
+              <span className="option__text">Empresa</span>
+            </div>
+          </li>
+          <li
+            className="nav__option"
+            ref={payrollRef}
+            data-name="PayrollView"
+            onClick={onSelectView}
+          >
+            <div className="option__container">
+              <FontAwesomeIcon
+                icon={faFileSignature}
+                className="option__icon"
+              />
+              <span className="option__text">Planillas</span>
+            </div>
+          </li>
+          <li
+            className="nav__option"
+            ref={configRef}
+            data-name="ConfigView"
+            onClick={onSelectView}
+          >
+            <div className="option__container">
+              <FontAwesomeIcon icon={faGear} className="option__icon" />
+              <span className="option__text">Ajustes</span>
+            </div>
+          </li>
+        </ul>
       </nav>
 
       <a href="#" className="aside__button">

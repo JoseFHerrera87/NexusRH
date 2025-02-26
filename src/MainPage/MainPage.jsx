@@ -1,11 +1,10 @@
 import { HeaderLayout, AsideLayout, MainLayout } from "./Layouts";
-import "./Styles/mainPage.css";
 
 export const MainPage = () => {
   return (
     <>
       <HeaderLayout />
-      <div className="principal">
+      <div className="flex h-full">
         <AsideLayout />
         <MainLayout />
       </div>

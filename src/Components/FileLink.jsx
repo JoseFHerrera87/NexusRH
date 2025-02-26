@@ -1,5 +1,4 @@
 import React from "react";
-import "../assets/fileLink.css";
 
 export const FileLink = () => {
   return (

@@ -3,13 +3,16 @@ import {
   useReactTable,
   getCoreRowModel,
   flexRender,
+  getFilteredRowModel,
 } from "@tanstack/react-table";
 import { useFetch } from "../../Hooks/useFetch";
-import "../Styles/payrollView.css";
+import { Searchbar } from "../../Components";
 
 export const PayrollView = () => {
   const { data, error } = useFetch("http://localhost:3000/payrolls");
   const [payrollData, setpayrollData] = useState([]);
+
+  const [filtering, setfiltering] = useState("");
 
   useEffect(() => {
     if (!error && data) setpayrollData(data);
@@ -35,6 +38,11 @@ export const PayrollView = () => {
     {
       header: "Ver",
       accessorKey: "view",
+      cell: (cell) => (
+        <a href={cell.row.original.view} target="_blank">
+          Ver
+        </a>
+      ),
     },
   ];
 
@@ -42,10 +50,21 @@ export const PayrollView = () => {
     data: payrollData,
     columns,
     getCoreRowModel: getCoreRowModel(),
+    getFilteredRowModel: getFilteredRowModel(),
+    state: {
+      globalFilter: filtering,
+    },
+    onGlobalFilterChange: setfiltering,
   });
 
   return (
     <>
+      <Searchbar
+        placeholder="Buscar Planilla..."
+        search={filtering}
+        setsearch={setfiltering}
+      />
+
       <table className="table_payroll">
         <thead className="payroll_header">
           {table.getHeaderGroups().map((headerGroup) => (

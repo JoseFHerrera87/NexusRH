@@ -1,23 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
 
-import "../MainPage/Styles/searchbar.css";
-
-export const Searchbar = () => {
-  const [search, setsearch] = useState("");
-  const maxLengthSearch = 30;
+//Placeholder indica el texto de ayuda para el elemento a buscar, search y setsearch es el useState (el estado) que se le pasa al componente para saber que estado va a cambiar y poder usar la logica de busqueda en el componente que lo llama o en otro componente con una logica diferente
+export const Searchbar = ({ placeholder, search, setsearch }) => {
+  const maxLengthSearch = 40;
 
   const handleChange = (e) => {
     const value = e.target.value;
     if (value.length <= maxLengthSearch) {
       setsearch(value);
     }
-  };
-
-  const handleSearch = () => {
-    if (search.length < 1 || search.length > maxLengthSearch) return;
-    console.log(search);
   };
 
   return (
@@ -28,16 +20,16 @@ export const Searchbar = () => {
           maxLength={maxLengthSearch}
           value={search}
           className="searchbar__input"
-          placeholder="Buscar empleado..."
+          placeholder={placeholder}
           onChange={handleChange}
         />
       </div>
-      <button className="search__icon-container" onClick={handleSearch}>
+      <div className="search__icon-container">
         <FontAwesomeIcon
           icon={faMagnifyingGlass}
           className="icon-container__icon"
         />
-      </button>
+      </div>
     </div>
   );
 };

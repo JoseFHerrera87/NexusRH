@@ -1,5 +1,3 @@
-import "../assets/staffCardStyle.css";
-
 export const StaffCard = ({ firstName, lastName, department, img }) => {
   return (
     <div className="card">

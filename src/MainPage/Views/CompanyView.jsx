@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BoxInfo, FileLink } from "../../Components";
 import { faMoneyBill, faUser } from "@fortawesome/free-solid-svg-icons";
-import "../Styles/companyView.css";
+
 import { useFetch } from "../../Hooks/useFetch";
 
 export const CompanyView = () => {
