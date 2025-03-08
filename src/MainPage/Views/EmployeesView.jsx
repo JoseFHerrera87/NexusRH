@@ -11,7 +11,6 @@ export const EmployeesView = () => {
 
   useEffect(() => {
     if (!employees.data) return;
-
     if (filterOption === "all") {
       setEmployeesFiltered(employees.data);
     } else {
@@ -27,11 +26,11 @@ export const EmployeesView = () => {
 
   return (
     <>
-      <header className="main__header">
-        <div className="header_filters">
-          <span className="filter_text">Departamento:</span>
+      <header className="flex justify-around items-center py-2 px-1 mb-5">
+        <div className="w-[30%] text-xl text-center">
+          <span className="mb-1 block font-semibold">Departamento:</span>
           <select
-            className="filter_options"
+            className="max-h-20"
             name="employeesFilter"
             value={filterOption}
             onChange={(e) => setFilterOption(e.target.value)}
@@ -48,7 +47,7 @@ export const EmployeesView = () => {
 
         <Searchbar placeholder={"Buscar Empleado..."} />
       </header>
-      <div className="employessList">
+      <div className="flex justify-around items-center flex-wrap gap-y-10 gap-x-1">
         {employeesFiltered.length === 0 ? (
           <h1>No hay resultados</h1>
         ) : (

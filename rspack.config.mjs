@@ -3,11 +3,11 @@ import { fileURLToPath } from "node:url";
 import { defineConfig } from "@rspack/cli";
 import { rspack } from "@rspack/core";
 import RefreshPlugin from "@rspack/plugin-react-refresh";
+import path from "node:path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const isDev = process.env.NODE_ENV === "development";
 
-// Target browsers, see: https://github.com/browserslist/browserslist
 const targets = ["chrome >= 87", "edge >= 88", "firefox >= 78", "safari >= 14"];
 
 export default defineConfig({
@@ -16,7 +16,11 @@ export default defineConfig({
     main: "./src/main.jsx",
   },
   resolve: {
-    extensions: ["...", ".ts", ".tsx", ".jsx"],
+    extensions: [".ts", ".tsx", ".jsx", "..."],
+    alias: {
+      "@storePanel": path.resolve(__dirname, "./src/store/storePanel.js"),
+      "@components": path.resolve(__dirname, "src/Components"),
+    },
   },
   module: {
     rules: [
